@@ -1,0 +1,13 @@
+[package]
+name = "mini_curl"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking"] }  # HTTP client library
+url = "2"           # URL parsing
+clap = { version = "3.2", features = ["derive"] }  # Command-line argument parsing
+tokio = { version = "1", features = ["rt-multi-thread"] } # For asynchronous support (optional)
+
